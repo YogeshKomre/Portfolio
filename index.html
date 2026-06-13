@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh Komre Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="toggleTheme">Toggle Theme</button>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <img src="profile.jpg" alt="Yogesh Komre" class="profile-img">
+    <h1>Yogesh Manraj Komre</h1>
+    <p>Web Developer | Front-End Specialist</p>
+    <a href="#projects"><button>View My Work</button></a>
+  </div>
+
+  <!-- About -->
+  <div class="section" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Experienced in .NET, Node.js, React.js, PHP, MySQL, and more. Passionate about building responsive, dynamic web applications.</p>
+  </div>
+
+  <!-- Projects -->
+  <div class="section" id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="school-app.png" alt="School Web Application">
+        <h3>School Web Application</h3>
+        <p>Dynamic web app for managing school data.</p>
+      </div>
+      <div class="card">
+        <img src="dance-class.png" alt="Dance Class Website">
+        <h3>Dance Class Website</h3>
+        <p>Responsive site for dance class schedules.</p>
+      </div>
+      <div class="card">
+        <img src="lab-app.png" alt="Lab Application">
+        <h3>Lab Application</h3>
+        <p>Windows app for managing lab operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="section" id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skill"><p>HTML</p><div class="bar"><div class="progress" style="width:90%"></div></div></div>
+    <div class="skill"><p>CSS</p><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+    <div class="skill"><p>JavaScript</p><div class="bar"><div class="progress" style="width:80%"></div></div></div>
+    <div class="skill"><p>React.js</p><div class="bar"><div class="progress" style="width:75%"></div></div></div>
+    <div class="skill"><p>.NET</p><div class="bar"><div class="progress" style="width:70%"></div></div></div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
